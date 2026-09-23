@@ -6,10 +6,7 @@ Do not fix it yet. Build the gate first, let the gate catch it, then fix it.
 import os
 import sys
 
-if os.name == "ubuntu-latest":
-    REPORT = "data/reports/summary.txt"
-else:
-    REPORT = "data\reports\summary.txt"
+    REPORT = os.path.join("data","reports","summary.txt")
 
 def report_path() -> str:
     """Where the nightly report gets written."""
