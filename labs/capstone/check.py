@@ -6,8 +6,10 @@ Do not fix it yet. Build the gate first, let the gate catch it, then fix it.
 import os
 import sys
 
-REPORT = "data/reports/summary.txt"
-
+if os.name == "Linux":
+    REPORT = "data/reports/summary.txt"
+else
+    REPORT = "data\reports\summary.txt"
 
 def report_path() -> str:
     """Where the nightly report gets written."""
