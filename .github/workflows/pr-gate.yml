@@ -22,8 +22,8 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@<SHA> # v7.0.1
-      - uses: actions/setup-python@<SHA> #v7.0.0
+      - uses: actions/checkout@v7.0.1 # v7.0.1
+      - uses: actions/setup-python@v7.0.0 #v7.0.0
         with:
           python-version: '3.12'
       - name: Run the check
