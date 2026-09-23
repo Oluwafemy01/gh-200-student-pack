@@ -6,9 +6,9 @@ Do not fix it yet. Build the gate first, let the gate catch it, then fix it.
 import os
 import sys
 
-if os.name == "Linux":
+if os.name == "ubuntu-latest":
     REPORT = "data/reports/summary.txt"
-else
+else if == "windows-latest":
     REPORT = "data\reports\summary.txt"
 
 def report_path() -> str:
