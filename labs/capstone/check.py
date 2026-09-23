@@ -8,7 +8,7 @@ import sys
 
 if os.name == "ubuntu-latest":
     REPORT = "data/reports/summary.txt"
-else if == "windows-latest":
+else:
     REPORT = "data\reports\summary.txt"
 
 def report_path() -> str:
